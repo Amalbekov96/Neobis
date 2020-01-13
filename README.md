@@ -4,4 +4,4 @@
 
 Kushtar
 
-![alt text](java_updates/400/400)
+![fun-large](https://user-images.githubusercontent.com/39180239/72253472-d435a300-362b-11ea-9354-0c56ec08a450.png)
