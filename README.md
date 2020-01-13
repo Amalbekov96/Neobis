@@ -4,3 +4,4 @@
 
 Kushtar
 
+![alt text](http://funnypicturesplus.com/annoying-java-updates.html/400/400)
