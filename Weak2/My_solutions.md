@@ -58,7 +58,7 @@ public class Solution {
 //-----------------------------------------------------------
 
 
-##Java Loops |
+## Java Loops |
 
 ```java
 
@@ -91,7 +91,7 @@ public class Solution {
 //-------------------------------------------------------------------------
 
 
-##java initialize block
+## java initialize block
 
 ```java
 public static int B;
@@ -114,7 +114,7 @@ static{
 //----------------------------------------------------------------------------
 
 
-##java intarface 
+## java intarface 
 
 ```java
 class MyCalculator implements AdvancedArithmetic
@@ -136,7 +136,7 @@ class MyCalculator implements AdvancedArithmetic
 ```
 
 //---------------------------------------------------------------------------
-##Java Inheritance II
+## Java Inheritance II
 
 ```java
 
@@ -155,7 +155,7 @@ class Adder extends Arithmetic
 ```
 //---------------------------------------------------------------------------------
 
-##Java Abstract Class
+## Java Abstract Class
 
 ```java
 
@@ -170,7 +170,7 @@ class MyBook extends Book{
 
 //------------------------------------------------------------------------------------
 
-##Java Instanceof keyword
+## Java Instanceof keyword
 ```java
       for(int i = 0; i < mylist.size(); i++){
          Object element=mylist.get(i);
@@ -184,7 +184,7 @@ class MyBook extends Book{
 ```
 //--------------------------------------------------------------------------------------
 
-##Java Method Overriding
+## Java Method Overriding
 ```java
          @Override
     void getNumberOfTeamMembers(){
@@ -193,7 +193,7 @@ class MyBook extends Book{
 ```
 //---------------------------------------------------------------------------------------
 
-##Valid Anagram.
+## Valid Anagram.
 
 ```java
     class Solution {
@@ -230,7 +230,7 @@ class MyBook extends Book{
 //-------------------------------------------------------------------------------------------
 
 
-##Satisfiability of Equality Equations.
+## Satisfiability of Equality Equations.
 
 ```java
  public static boolean equationsPossible(String[] equations) {
