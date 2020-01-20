@@ -4,6 +4,7 @@
 ## Java Stdin and Stdout I
   
 ```java
+
 import java.util.*;
 
 public class Solution {
@@ -22,8 +23,9 @@ public class Solution {
 ```
 //-------------------------------------------------
 
-Java If-Else
+## Java If-Else
 
+```java
 import java.io.*;
 import java.math.*;
 import java.security.*;
@@ -50,6 +52,8 @@ public class Solution {
         scanner.close();
     }
 }
+
+```
 
 //-----------------------------------------------------------
 
