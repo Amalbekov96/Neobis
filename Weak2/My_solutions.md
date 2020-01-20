@@ -58,8 +58,9 @@ public class Solution {
 //-----------------------------------------------------------
 
 
-Java Loops |
+##Java Loops |
 
+```java
 
 import java.io.*;
 import java.math.*;
@@ -86,12 +87,13 @@ public class Solution {
     }
 }
 
+```
 //-------------------------------------------------------------------------
 
 
-java initialize block
+##java initialize block
 
-
+```java
 public static int B;
 public static int H;
 static boolean flag = false;
@@ -108,13 +110,13 @@ static{
         System.out.println("java.lang.Exception: Breadth and height must be positive");
     }
 }
-
+```
 //----------------------------------------------------------------------------
 
 
-java intarface 
+##java intarface 
 
-
+```java
 class MyCalculator implements AdvancedArithmetic
 {
     
@@ -131,11 +133,12 @@ class MyCalculator implements AdvancedArithmetic
         return sum;
     }
 }
-
+```
 
 //---------------------------------------------------------------------------
-Java Inheritance II
+##Java Inheritance II
 
+```java
 
 class Arithmetic
 {
@@ -149,11 +152,12 @@ class Adder extends Arithmetic
 
 }
 
-
+```
 //---------------------------------------------------------------------------------
 
-Java Abstract Class
+##Java Abstract Class
 
+```java
 
 class MyBook extends Book{
     void setTitle(String s)
@@ -162,10 +166,12 @@ class MyBook extends Book{
     }
 }
 
+```
+
 //------------------------------------------------------------------------------------
 
-Java Instanceof keyword
-
+##Java Instanceof keyword
+```java
       for(int i = 0; i < mylist.size(); i++){
          Object element=mylist.get(i);
          if(element.getClass().getName() == "Student")
@@ -175,20 +181,21 @@ Java Instanceof keyword
          if(element.getClass().getName() == "Hacker")
             c++;
       }
-
+```
 //--------------------------------------------------------------------------------------
 
-Java Method Overriding
-
+##Java Method Overriding
+```java
          @Override
     void getNumberOfTeamMembers(){
         System.out.println( "Each team has 11 players in " + getName() );
     }
-
+```
 //---------------------------------------------------------------------------------------
 
-     Valid Anagram.
+##Valid Anagram.
 
+```java
     class Solution {
     public boolean isAnagram(String s, String t) {
 
@@ -219,12 +226,13 @@ Java Method Overriding
         }
     }
 }
-
+```
 //-------------------------------------------------------------------------------------------
 
 
-Satisfiability of Equality Equations.
+##Satisfiability of Equality Equations.
 
+```java
  public static boolean equationsPossible(String[] equations) {
 
         Vector<String> strBox = new Vector<String>();
