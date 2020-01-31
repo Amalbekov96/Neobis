@@ -1,4 +1,6 @@
-# part 1
+# part 1  
+
+### some of the codes i have not saved so i had no time to write them all over again just submitted the ones i had
 
 ## Select all
 ```sql 
@@ -88,7 +90,7 @@ SELECT NAME FROM STUDENTS WHERE MARKS > 75
  SELECT NAME FROM Employee ORDER BY NAME ASC;
 ```
 
-##Update sem Where
+## Update sem Where
 
 ```sql
 select name, price from
@@ -103,3 +105,4 @@ select name, price from
 order by price asc, Den asc
 ```
  
+# Part 2
