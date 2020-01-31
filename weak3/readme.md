@@ -102,6 +102,76 @@ select name, price from
 order by price asc, Den asc
 ```
  
+## Cearense Championship
+
+```sql
+
+
+;with nm(team_1, numM) as (
+select team_1, count(team_1) as numM from
+    (Select team_1 from matches 
+    union all 
+    Select team_2 from matches) nm 
+group by team_1)
+, vi(team_1, numV) AS
+(
+select team_1, count(team_1) from
+    (select team_1 from matches 
+    where team_1_goals > team_2_goals
+    union all 
+    select team_2 from matches 
+    where team_2_goals > team_1_goals) w
+GROUP BY team_1
+)
+, def (team_1, numDe) AS
+(
+select team_1, count(team_1) from
+    (select team_1 from matches 
+    where team_1_goals < team_2_goals
+    union all 
+    select team_2 from matches 
+    where team_2_goals < team_1_goals) w
+GROUP BY team_1
+)
+, dra (team_1, numDr) AS
+(
+select team_1, count(team_1) from
+    (select team_1 from matches 
+    where team_1_goals = team_2_goals
+    union all 
+    select team_2 from matches 
+    where team_2_goals = team_1_goals) w
+GROUP BY team_1
+)
+, sco (team_1, numSc) AS
+(
+select team_1, sum(sc) from
+    (select team_1, IIF(team_1_goals > team_2_goals, 3, 1) as sc from matches 
+    where team_1_goals > team_2_goals or team_1_goals = team_2_goals
+    union all 
+    select team_2, IIF(team_2_goals > team_1_goals, 3, 1) from matches 
+    where team_2_goals > team_1_goals or team_2_goals = team_1_goals) s
+GROUP BY team_1
+)
+
+select name, numM as matches
+    , IIF(numV IS NULL, 0, numV) as victories
+    , IIF(numDe IS NULL, 0, numDe) as defeats 
+    , IIF(numDr IS NULL, 0, numDr) as draws
+    , IIF(numsc IS NULL, 0, numSc) as score
+    from teams t
+left join nm
+on t.id = nm.team_1
+left join vi 
+on t.id = vi.team_1
+left join def
+on t.id = def.team_1
+left join dra
+on t.id = dra.team_1
+left join sco
+on t.id = sco.team_1
+order by numSc desc
+```
 # Part 2
 
 ## My POJO class 
