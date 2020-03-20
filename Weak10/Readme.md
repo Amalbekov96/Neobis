@@ -11,9 +11,3 @@ From the directory of Dockerfile - `docker build . -t users-mysql`
 3. Run the Docker image created in #2.
 `docker build . -t users-mysql`
 
-## Useful Docker commands
-- `docker images`
-- `docker container ls`
-- `docker logs <container_name>`
-- `docker container rm <container_name`
-- `docker image rm <image_name`
