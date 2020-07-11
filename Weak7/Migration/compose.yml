@@ -1,3 +1,0 @@
-flyway:
-  flyway.baseline-on-migrate: true
-  baseline-version: 0
